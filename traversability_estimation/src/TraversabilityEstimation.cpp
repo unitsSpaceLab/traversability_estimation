@@ -21,7 +21,7 @@ namespace traversability_estimation {
 
 TraversabilityEstimation::TraversabilityEstimation(ros::NodeHandle& nodeHandle)
     : nodeHandle_(nodeHandle),
-      acceptGridMapToInitTraversabilityMap_(false),
+      acceptGridMapToInitTraversabilityMap_(true),
       traversabilityMap_(nodeHandle),
       traversabilityType_("traversability"),
       slopeType_("traversability_slope"),
